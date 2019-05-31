@@ -1,0 +1,22 @@
+B1: Thực hiện Restore Package file package.json của project MS.Portal bằng visual studio
+B2: Thực hiện tạo DB bằng cách migration tại các project WebAPI hoặc attack các file DB đặt tại thư mục MS.Database
+B3: Truy cập thư mục MS.Support, build lại toàn bộ các project bằng chạy file _BuildAllProjects.bat
+B4: Chạy lần lượt các file để chạy các dịch vụ Web API
+- StartAccountManagementWebApi.bat
+- StartInventoryManagementWebApi.bat
+- StartPurchaseOrderManagementWebApi.bat
+- StartSalesOrderManagementWebApi.bat
+B5: Chạy lần lượt các file để chạy các dịch vụ MessageQueue
+- StartInventoryManagementMessageQueue.bat
+- StartPurchaseOrderManagementMessageQueue.bat
+- StartSalesOrderManagementMessageQueue.bat
+- StartLoggingManagementMessageQueue.bat
+B6: Chạy file StartPortal.bat để khởi chạy ứng dụng frontend Angular
+B7: Truy cập http://localhost:4200/ để sử dụng ứng dụng
+B8: Truy cập http://localhost:15672 để theo dõi các message được trao đổi
+
+Source đầy đủ và cập nhật mới nhất tham khảo tại: https://github.com/haodhh/Microservices_DEV
+
+Hiện tại project MS.Support chưa được hoàn thiện, khi hoàn thiện thì dịch vụ phía server sẽ chỉ cần chạy bằng file _StartAllProject.bat, theo dõi cập nhật mới nhất tại link source bên trên!
+Cảm ơn bạn đã tham khảo bài viết!
+Thank you!

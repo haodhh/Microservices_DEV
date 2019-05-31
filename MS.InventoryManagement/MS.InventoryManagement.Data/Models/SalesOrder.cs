@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace MS.InventoryManagement.Data.Models
+{
+    /// <summary>
+    /// SalesOrder
+    /// </summary>
+    public class SalesOrder
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public int SalesOrderId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int MasterSalesOrderId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int SalesOrderNumber { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int AccountId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string CustomerName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string AddressLine1 { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string AddressLine2 { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string City { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Region { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PostalCode { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double OrderTotal { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int SalesOrderStatusId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime DateCreated { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime DateUpdated { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SalesOrderStatus SalesOrderStatus { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public List<SalesOrderDetail> SalesOrderDetails { get; set; }
+    }
+}
