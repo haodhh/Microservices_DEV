@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MS.Common\MS.Common\MS.Common.csproj" />
+    <ProjectReference Include="..\MS.AccountManagement.Data\MS.AccountManagement.Data.csproj" />
+  </ItemGroup>
+
+</Project>
